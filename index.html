@@ -6,9 +6,10 @@
 <body>
 
 	<div id="app">
-		<h2>Filterable list</h2>
+		<h2>Filterable list</h2> {{radioData}}
 		<div class="input"><input-box></input-box></div>
 		{{name}}
+		<input-radio></input-radio>
 		<br>
 		<div v-for="name in names | filterBy fil.trim()">{{name}}</div >
 	</div>

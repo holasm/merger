@@ -7,7 +7,8 @@ var data = {
 		'mnana',
 		'amar'
 	],
-	fil: ''
+	fil: '',
+	radioData: 'aaa'
 }
 
 Vue.component('input-box', {
@@ -15,6 +16,21 @@ Vue.component('input-box', {
 	methods: {
 		update: function (e) {
 			data.fil = this.filter
+		}
+	}
+})
+Vue.component('input-radio', {
+	template: '<input type="radio" @click="toggle" v-model="radio" :checked="radio">',
+	data: {
+		radio: true
+	},
+	 ready: function () {
+		data.radioData = this.radio
+	},
+	methods: {
+		toggle: function (e) {
+			this.radio = !this.radio
+			data.radioData = this.radio
 		}
 	}
 })
