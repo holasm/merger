@@ -37,6 +37,6 @@ Vue.component('input-radio', {
 
 new Vue({
 	el: '#app',
-	data: data
+	data: data // so cool and hot at the same time
 })
 
