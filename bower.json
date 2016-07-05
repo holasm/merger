@@ -1,0 +1,20 @@
+{
+  "name": "merger",
+  "homepage": "https://github.com/holasm/merger",
+  "authors": [
+    "subhasis maity <holasm@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^1.0.26"
+  }
+}
