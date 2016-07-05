@@ -6,8 +6,11 @@
 <body>
 
 	<div id="app">
-		{{text.head}}
-		<input-box></input-box>
+		<h2>Filterable list</h2>
+		<div class="input"><input-box></input-box></div>
+		{{name}}
+		<br>
+		<div v-for="name in names | filterBy fil">{{name}}</div >
 	</div>
 	
 </body>
